@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -12,8 +12,6 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;1,400&family=Titillium+Web:wght@600;900&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/b43fc4ca17.js" crossorigin="anonymous"></script>
-  <!-- Google api call below -- paid service for API -->
-  <!-- <script src="main.js"></script> -->
 </head>
 
 <body>
@@ -42,53 +40,118 @@
             
           <div class="contact-option">  
             <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="user-phone">
+            <input type="tel" id="phone" name="user-phone" placeholder="(555)555-5555">
           </div>
 
           <div class="contact-option">  
             <label for="address_1">Street Address</label>
-            <input type="text" id="address_1" name="user-address_1">
+            <input type="text" id="address_1" name="user-address_1" placeholder="1234 Housing Way">
           </div>
 
           <div class="contact-option">  
             <label for="city">City</label>
-            <input type="text" id="city" name="user-city">
+            <input type="text" id="city" name="user-city" placeholder="City">
           </div>
 
           <div class="contact-option">  
             <label for="state">State</label>
-            <input type="text" id="state" name="user-state">
+            <select id="state" name="user-state">
+              <option value="">Find your state</option>
+              <option value="AL">Alabama</option>
+              <option value="AK">Alaska</option>
+              <option value="AZ">Arizona</option>
+              <option value="AR">Arkansas</option>
+              <option value="CA">California</option>
+              <option value="CO">Colorado</option>
+              <option value="CT">Connecticut</option>
+              <option value="DE">Delaware</option>
+              <option value="DC">District Of Columbia</option>
+              <option value="FL">Florida</option>
+              <option value="GA">Georgia</option>
+              <option value="HI">Hawaii</option>
+              <option value="ID">Idaho</option>
+              <option value="IL">Illinois</option>
+              <option value="IN">Indiana</option>
+              <option value="IA">Iowa</option>
+              <option value="KS">Kansas</option>
+              <option value="KY">Kentucky</option>
+              <option value="LA">Louisiana</option>
+              <option value="ME">Maine</option>
+              <option value="MD">Maryland</option>
+              <option value="MA">Massachusetts</option>
+              <option value="MI">Michigan</option>
+              <option value="MN">Minnesota</option>
+              <option value="MS">Mississippi</option>
+              <option value="MO">Missouri</option>
+              <option value="MT">Montana</option>
+              <option value="NE">Nebraska</option>
+              <option value="NV">Nevada</option>
+              <option value="NH">New Hampshire</option>
+              <option value="NJ">New Jersey</option>
+              <option value="NM">New Mexico</option>
+              <option value="NY">New York</option>
+              <option value="NC">North Carolina</option>
+              <option value="ND">North Dakota</option>
+              <option value="OH">Ohio</option>
+              <option value="OK">Oklahoma</option>
+              <option value="OR">Oregon</option>
+              <option value="PA">Pennsylvania</option>
+              <option value="RI">Rhode Island</option>
+              <option value="SC">South Carolina</option>
+              <option value="SD">South Dakota</option>
+              <option value="TN">Tennessee</option>
+              <option value="TX">Texas</option>
+              <option value="UT">Utah</option>
+              <option value="VT">Vermont</option>
+              <option value="VA">Virginia</option>
+              <option value="WA">Washington</option>
+              <option value="WV">West Virginia</option>
+              <option value="WI">Wisconsin</option>
+              <option value="WY">Wyoming</option>
+            </select>
           </div>
 
           <div class="contact-option">  
             <label for="zip">Zip Code</label>
-            <input type="text" id="zip" name="user-zip">
+            <input type="text" id="zip" name="user-zip" placeholder="55555">
           </div>
 
           </fieldset>
 
-        <fieldset>
+        <fieldset id="option_fieldset">
           <legend>Newsletter</legend>
 
           <p class="instructions">Select the newsletters you would like to receive.</p>
-          <input type="checkbox" name="newsletter" id="news-html">
-          <label for="news-html">HTML News</label>
-          
-          <input type="checkbox" name="newsletter" id="news-css">
-          <label for="news-css">CSS News</label>
-          
-          <input type="checkbox" name="newsletter" id="news-js">
-          <label for="news-js">JavaScript News</label>
+          <div class="option-flex">
+            <div class="input_wrap">
+              <input type="checkbox" name="newsletter" id="news-html">
+              <label for="news-html">HTML News</label>
+            </div>  
+            <div class="input_wrap">
+              <input type="checkbox" name="newsletter" id="news-css">
+              <label for="news-css">CSS News</label>
+            </div>  
+            <div class="input_wrap">
+              <input type="checkbox" name="newsletter" id="news-js">
+              <label for="news-js">JavaScript News</label>
+            </div>
+          </div>
 
           <p class="instructions">Newsletter format</p>
-          <input type="radio" name="format" id="html" value="html">
-          <label for="html">HTML</label>
-          
-          <input type="radio" name="format" id="txt" value="txt" checked>
-          <label for="txt">Plain txt</label>
+          <div class="option-flex">
+            <div class="input_wrap">
+              <input type="radio" name="format" id="html" value="html">
+              <label for="html">HTML</label>
+            </div>
+            
+            <div class="input_wrap">
+              <input type="radio" name="format" id="txt" value="txt" checked>
+              <label for="txt">Plain txt</label>
+            </div>
+          </div>
 
           <p class="instructions">Other topics you'd like to hear about.</p>
-          <textarea id="user-feedback" name="user-feedback"></textarea>
+          <textarea id="user-feedback" name="user-feedback" placeholder="I'd like to hear about..."></textarea>
 
         </fieldset>
 
