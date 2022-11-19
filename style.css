@@ -312,8 +312,31 @@ button:focus {
     text-align: right;
   }
 
+  #district-container,
+  #district-container .contact-option {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  #district-container .contact-option {
+    width: 50%;
+    justify-content: flex-start;
+  }
+
+  #district-container .contact-option label {
+    min-width: 0;
+    padding-right: 1.5rem;
+  }
+
   #state {
+    width: auto;
     padding-top: .25rem;
+
+  }
+
+  #zip {
+    width: 25%;
   }
 
   #copyright {
