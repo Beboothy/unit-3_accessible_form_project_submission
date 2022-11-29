@@ -152,7 +152,6 @@ fieldset {
 
 .contact-option input::placeholder {
   text-align: right;
-  padding-right: .5rem;
   font-style: italic;
   opacity: .7;
 }
@@ -164,6 +163,7 @@ fieldset {
 }
 
 .contact-option input:focus {
+  transition: .2s ease-in-out;
   background-color: var(--tertiary);
   font-weight: 400;
 }
@@ -174,7 +174,7 @@ fieldset {
 }
 
 #zip {
-  width: auto;
+  width: 50%;
 }
 
 #option_fieldset .option-flex {
@@ -191,14 +191,25 @@ fieldset {
   min-height: 50px;
 }
 
+.input_wrap input[type="checkbox"] {
+  cursor: pointer;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  transition: all .2s ease-in-out;
+}
+
+.input_wrap input:checked {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
 .input_wrap label {
   padding: .25rem .5rem;
   transition: ease-in-out .1s;
   border-radius: 5px;
 }
 
-.input_wrap label:hover,
-.input_wrap label:focus {
+.input_wrap label:hover {
   background-color: var(--accent);
   color: white;
   font-family: 'Titillium Web', sans-serif;
@@ -337,7 +348,7 @@ button:focus {
   }
 
   #zip {
-    width: 100%;
+    width: 25%;
   }
 
   #copyright {
